@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recetas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="./assets/cocinando.png" type="image/x-icon">
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="favorites.html">Favoritos</a></li>
+        </ul>
+    </nav>
+    <div class="header">
+        <div class="header-content">
+            <h1>Busca tu receta</h1>
+            <form id="recipe-search-form">
+                <input type="text" id="recipe-query" placeholder="Ingresa ingredientes o palabras clave">
+                <select id="meal-type">
+                    <option value="any">Cualquier comida</option>
+                    <option value="breakfast">Desayuno</option>
+                    <option value="lunch">Comida</option>
+                    <option value="dinner">Cena</option>
+                </select>
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </div>
+    <div id="recetas" class="recetas-container">
+        <!-- Aquí se agregarán las tarjetas de recetas -->
+    </div>
+    <div id="recetas-favoritas"></div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>

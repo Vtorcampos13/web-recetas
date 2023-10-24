@@ -1,0 +1,229 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://images.pexels.com/photos/531905/pexels-photo-531905.jpeg);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.header {
+    background-color: #fff;
+    opacity: 0.8;
+    margin-top: 100px;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.head{
+    background-color: #fff;
+    opacity: 0.8;
+    padding: 10px 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.header-content{
+    display: inline-block;
+}
+
+.header h1{
+    margin: 0;
+    padding: 0;
+    background: url(https://img.freepik.com/vector-premium/comida-transparente-vectorial-pizarra-fondos-pantalla-utilizado-disenos-restaurantes_689288-75.jpg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 3rem;
+}
+.header form {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Ajusta el espaciado según tus preferencias */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+#recipe-search-form {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    align-items: center;
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Añade espacio interior alrededor del formulario */
+    border-radius: 10px; /* Agrega esquinas redondeadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px; /* Limita el ancho del formulario si es necesario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+}
+
+#recipe-query {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70%;
+}
+
+#meal-type {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 50%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Estilos para las tarjetas de recetas */
+#recetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 100px;
+    text-align: center;
+    gap: 20px;
+}
+/* Estilos para las tarjetas de recetas */
+.receta-card {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.receta-card h2 {
+    color: #333; /* Cambia el color del texto del título */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.receta-card a {
+    text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+.receta-card img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Estilos para la página de detalles de receta */
+#detalle-receta {
+    max-width: 800px;
+    margin: 100px;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+#detalle-receta h2 {
+    color: #333;
+}
+
+#detalle-receta img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+#detalle-receta h3 {
+    color: #333;
+}
+
+#detalle-receta ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#detalle-receta ul li {
+    margin-bottom: 5px;
+}
+
+#detalle-receta a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    margin-top: 10px;
+}
+
+#detalle-receta a:hover {
+    text-decoration: underline;
+}
+
+.toggle-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.toggle-button.active {
+    color: #ff0000; /* Rojo para indicar que es una receta favorita */
+}
+
+.rated{
+    color: yellow;
+}
+
+#home-link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background: url('icono-casa.png') no-repeat;
+    background-size: cover;
+    text-indent: -9999px; /* Para ocultar el texto */
+}
+
+/*Estilos para navegador */
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+#navbar li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #fff; /* Color de texto */
+    font-weight: bold;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
